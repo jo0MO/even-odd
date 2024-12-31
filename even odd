@@ -1,0 +1,14 @@
+class Number:
+    def __init__(self, value):
+        self.value = value
+
+    def check_even_odd(self):
+        if self.value % 2 == 0:
+            return "Even"
+        else:
+            return "Odd"
+
+# Example usage
+num = Number(int(input("Enter a number: ")))
+result = num.check_even_odd()
+print(f"The number is: {result}")
